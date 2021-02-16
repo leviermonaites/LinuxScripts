@@ -1,0 +1,15 @@
+# It is just a script that counts how many times you've already called it.
+# In order to do it works properly, you need to create a variable called
+#                       COUNT_TIMES
+# And when you execute the script put the source command beforehand.
+
+# OBS: It doesn't need any parameters.
+
+((COUNT_TIMES+=1))
+
+if [ $COUNT_TIMES -gt "1" ]; 
+then
+	echo "You've already executed this script $COUNT_TIMES times";
+else
+	echo "You've already executed this script $COUNT_TIMES time";
+fi;
